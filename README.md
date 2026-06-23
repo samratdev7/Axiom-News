@@ -34,3 +34,35 @@ Clone the repository, navigate into the directory, and install the dependencies:
 ```bash
 cd axiom-news
 npm install
+```
+
+### 3. Environment Variables
+Create a `.env.local` file in the root of the project and add your credentials:
+```env
+# GNews API Key (Optional: get a free key at https://gnews.io)
+# If left empty, the application will use localized mock data fallback
+GNEWS_API_KEY=your_gnews_api_key_here
+
+# Contact Email Setup (Nodemailer)
+GMAIL_USER=your_gmail_address@gmail.com
+GMAIL_PASS=your_app_password
+```
+
+### 4. Run Locally
+Start the development server:
+```bash
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
+
+---
+
+## 📦 Deployment to Vercel
+
+The easiest way to deploy **Axiom News** is using **GitHub**:
+
+1. Create a new repository on [GitHub](https://github.com).
+2. Push your project code (excluding `node_modules` and `.next`) to your GitHub repository.
+3. Import the repository in [Vercel](https://vercel.com/new).
+4. Add the environment variables (`GMAIL_USER`, `GMAIL_PASS`, `GNEWS_API_KEY`) in the Vercel project configuration.
+5. Click **Deploy**!

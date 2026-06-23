@@ -1,0 +1,59 @@
+{
+  "users": {
+    "persistent@test.com": {
+      "email": "persistent@test.com",
+      "name": "Reporter Jane",
+      "avatarId": "gravatar",
+      "avatarUrl": "https://www.gravatar.com/avatar/4f05460550bad914c5bf6641391ee71a?d=identicon&s=120",
+      "settings": {
+        "defaultCountry": "",
+        "defaultFeedMode": "compact",
+        "notifications": true
+      }
+    },
+    "samrat.dev6213@gmail.com": {
+      "email": "samrat.dev6213@gmail.com",
+      "name": "SAMARUUU",
+      "avatarId": "gravatar",
+      "avatarUrl": "https://www.gravatar.com/avatar/4c83473646fbbcd7b6b9fd63decb9381?d=identicon&s=120",
+      "settings": {
+        "defaultCountry": "",
+        "defaultFeedMode": "detailed",
+        "notifications": true
+      }
+    }
+  },
+  "bookmarks": {
+    "persistent@test.com": [
+      {
+        "id": "intl-5",
+        "title": "International Sports Federation Announces Major Rule Changes",
+        "description": "The international governing body for athletics announces sweeping rule changes that will reshape competitive sports.",
+        "content": "In a landmark decision, the International Athletics Federation has announced comprehensive rule changes affecting competition formats and eligibility criteria.",
+        "imageUrl": "https://images.unsplash.com/photo-1461896836934-bd45ea8be968?w=800&h=450&fit=crop",
+        "source": "ESPN",
+        "sourceUrl": "https://espn.com",
+        "nativeUrl": "https://espn.com/global",
+        "ytChannelUrl": "https://youtube.com/@espnnews",
+        "publishedAt": "2026-06-22T03:24:38.402Z",
+        "url": "https://espn.com/news/5",
+        "category": "sports"
+      },
+      {
+        "id": "intl-4",
+        "title": "Breakthrough in Renewable Energy Storage Could Revolutionize Grid",
+        "description": "Scientists announce a major advancement in battery technology that could make renewable energy storage 10x more efficient.",
+        "content": "A team of international researchers has unveiled a new battery technology that dramatically improves energy storage efficiency for renewable sources.",
+        "imageUrl": "https://images.unsplash.com/photo-1548613053-220efc6202f9?w=800&h=450&fit=crop",
+        "source": "Nature",
+        "sourceUrl": "https://nature.com",
+        "nativeUrl": "https://nature.com/global",
+        "ytChannelUrl": "https://youtube.com/@naturenews",
+        "publishedAt": "2026-06-22T13:24:38.402Z",
+        "url": "https://nature.com/news/4",
+        "category": "science"
+      }
+    ]
+  },
+  "otps": {}
+}

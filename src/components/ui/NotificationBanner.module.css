@@ -1,0 +1,115 @@
+.banner {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  z-index: 99999;
+  width: 360px;
+  max-width: calc(100vw - 48px);
+  background: var(--bg-glass);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.05);
+  padding: var(--space-md);
+  display: flex;
+  gap: var(--space-md);
+  animation: slideIn var(--duration-slow) var(--ease-out);
+  transition: all var(--duration-normal) var(--ease-out);
+}
+
+.avatar {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sender {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+
+.time {
+  font-size: 0.7rem;
+  color: var(--text-tertiary);
+}
+
+.body {
+  font-size: 0.82rem;
+  line-height: 1.4;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+  gap: var(--space-sm);
+  margin-top: 6px;
+}
+
+.copyBtn, .closeBtn {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: all var(--duration-fast) var(--ease-out);
+}
+
+.copyBtn {
+  background: var(--accent-gradient);
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 2px 8px rgba(124, 92, 252, 0.3);
+}
+
+.copyBtn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(124, 92, 252, 0.4);
+}
+
+.closeBtn {
+  background: transparent;
+  color: var(--text-secondary);
+  border: 1px solid var(--border-subtle);
+}
+
+.closeBtn:hover {
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(120%) scale(0.9);
+    opacity: 0;
+  }
+  70% {
+    transform: translateX(-10px) scale(1.02);
+  }
+  100% {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+}
